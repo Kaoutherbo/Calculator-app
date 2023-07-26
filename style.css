@@ -1,0 +1,82 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Colors */
+--medium-purple:#bca5f6;
+--Dark-purple: #2b1443;
+--White:#fff;
+--beige:rgb(249, 243, 236);
+
+    /* Fonts */
+--Font-Family: 'Poppins', sans-serif;
+--Font-size:20px;
+--Font-Weight-normal:300;
+--Font-Weight-medium:600;
+--Font-Weight-bold:700;
+
+}
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--beige);
+  font-weight: var(--Font-Family);
+  font-weight: var(--Font-Weight-normal);
+  font-size: var(--Font-size);
+
+}
+.calculator{
+  background-color:var(--Dark-purple);
+  padding: 20px;
+  border-radius: 10px;
+}
+form input{
+  border: none;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px  rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  font-size: var(--Font-size);
+  color: var(--White);
+  margin: 10px;
+  cursor: pointer;
+  font-weight:var(--Font-Weight-medium);
+}
+form input:hover{
+  background-color:var(--beige);
+  color:var(--Dark-purple);
+}
+.display{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+.display input{
+  text-align: right;
+  flex: 1;
+  height:70px;
+  padding: 0 10px 0 0;
+  font-size: 45px;
+  box-shadow: none;
+  background-color:var(--White);
+  color: black;
+  font-weight: var(--Font-Weight-normal);
+}
+
+.equal{
+  width: 145px;
+}
+
+.operator{
+  color:var(--Dark-purple);
+  background-color:var(--medium-purple);
+}
+
